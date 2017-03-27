@@ -3,7 +3,9 @@ package com.example.gra.gra;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MyGrievance extends AppCompatActivity {
+public class MyGrievanceActivity extends AppCompatActivity {
+
+    //handle my grievnance
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

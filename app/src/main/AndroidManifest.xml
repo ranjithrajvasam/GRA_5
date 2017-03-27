@@ -20,7 +20,7 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LogComplaintActivity" />
-        <activity android:name=".MyGrievance"></activity>
+        <activity android:name=".MyGrievanceActivity"></activity>
     </application>
 
 </manifest>
