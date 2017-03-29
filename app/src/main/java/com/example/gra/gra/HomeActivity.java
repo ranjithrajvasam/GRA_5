@@ -31,6 +31,14 @@ public class HomeActivity extends AppCompatActivity {
                 HomeActivity.this.startActivity(complaintIntent);
             }
         });
+
+        bMyprofile.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent profileIntent = new Intent(HomeActivity.this, MyProfileActivity.class);
+                HomeActivity.this.startActivity(profileIntent);
+            }
+        });
     }
 
     @Override
