@@ -52,8 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (success){
                                 collectVariables(jsonObject);
-                                Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
-                                LoginActivity.this.startActivity(intent);
+                                decideTransitionActivity();
 
                             }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
@@ -74,6 +73,19 @@ public class LoginActivity extends AppCompatActivity {
                 queue.add(loginRequest);
             }
         });
+    }
+
+    private void decideTransitionActivity() {
+        String userType = MyGlobalVariable.getUserType();
+
+        if(userType.equals("0")){
+            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+            LoginActivity.this.startActivity(intent);
+        }
+        else if(userType.equals("1")){
+            Intent intent = new Intent(LoginActivity.this,govtOffcHomeActivity.class);
+            LoginActivity.this.startActivity(intent);
+        }
     }
 
     void collectVariables(JSONObject jsonObject){

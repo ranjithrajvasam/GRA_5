@@ -23,7 +23,8 @@
         <activity android:name=".MyGrievanceActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".MyProfileRequest" />
-        <activity android:name=".ChangePasswordActivity"></activity>
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".govtOffcHomeActivity"></activity>
     </application>
 
 </manifest>
