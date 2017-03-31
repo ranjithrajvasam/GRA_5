@@ -13,8 +13,11 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -47,30 +50,10 @@ public class HomeActivity extends AppCompatActivity {
                 Response.Listener<String> responseListener = new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response){
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            //boolean success = jsonObject.getBoolean("success");
-                            Intent intent = new Intent(HomeActivity.this,MyGrievanceActivity.class);
-                            //JSONArray movies = jsonObject.getJSONArray("category");
-                            //String hey = movies.toString();
-                            intent.putExtra("response_array",response);
-                            HomeActivity.this.startActivity(intent);
-                            /*if (success){
+                        Intent intent = new Intent(HomeActivity.this,MyGrievanceActivity.class);
+                        intent.putExtra("response_array",response);
+                        HomeActivity.this.startActivity(intent);
 
-                                Intent intent = new Intent(HomeActivity.this,MyGrievanceActivity.class);
-                                HomeActivity.this.startActivity(intent);
-
-                            }else{
-                                AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
-                                builder.setMessage("My Complaint Request Failed")
-                                        .setNegativeButton("Retry",null)
-                                        .create()
-                                        .show();
-                            }*/
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
                     }
                 };
 
@@ -89,6 +72,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     public void onBackPressed() {
