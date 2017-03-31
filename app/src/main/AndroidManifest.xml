@@ -22,7 +22,8 @@
         <activity android:name=".LogComplaintActivity" />
         <activity android:name=".MyGrievanceActivity" />
         <activity android:name=".MyProfileActivity" />
-        <activity android:name=".MyProfileRequest"></activity>
+        <activity android:name=".MyProfileRequest" />
+        <activity android:name=".ChangePasswordActivity"></activity>
     </application>
 
 </manifest>

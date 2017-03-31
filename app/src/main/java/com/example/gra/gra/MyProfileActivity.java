@@ -46,6 +46,14 @@ public class MyProfileActivity extends AppCompatActivity {
                 }
             }
         });
+
+        changePswdButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent pswdChangeIntent = new Intent(MyProfileActivity.this,ChangePasswordActivity.class);
+                MyProfileActivity.this.startActivity(pswdChangeIntent);
+            }
+        });
     }
 
     private void updateOnServer(EditText aadharNo, EditText phoneNo, EditText emailAddr) {
@@ -58,8 +66,7 @@ public class MyProfileActivity extends AppCompatActivity {
                     boolean success = jsonResponse.getBoolean("success");
 
                     if (success){
-                        Intent intent = new Intent(MyProfileActivity.this,HomeActivity.class);
-                        MyProfileActivity.this.startActivity(intent);
+                        finish();
                     }else{
                         AlertDialog.Builder builder = new AlertDialog.Builder(MyProfileActivity.this);
                         builder.setMessage("Update Failed")
