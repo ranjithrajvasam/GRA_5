@@ -24,7 +24,10 @@
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".MyProfileRequest" />
         <activity android:name=".ChangePasswordActivity" />
-        <activity android:name=".govtOffcHomeActivity"></activity>
+        <activity android:name=".govtOffcHomeActivity" />
+        <activity android:name=".GOGrievanceActivity" />
+        <activity android:name=".GOBlockUserActivity" />
+        <activity android:name=".GOEmergencyActivity"></activity>
     </application>
 
 </manifest>

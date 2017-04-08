@@ -34,10 +34,10 @@
         />
 
     <Button
-        android:text="Delete a User"
+        android:text="Block a User"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btDeleleUser"
+        android:id="@+id/btBlockUser"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btViewGrievances"
         android:layout_alignStart="@+id/btViewGrievances"
@@ -48,11 +48,11 @@
         android:text="Update Emergency Contacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btDeleleUser"
+        android:layout_below="@+id/btBlockUser"
         android:layout_marginTop="50dp"
         android:id="@+id/btUpdateEmergency"
-        android:layout_alignRight="@+id/btDeleleUser"
-        android:layout_alignEnd="@+id/btDeleleUser"
-        android:layout_alignLeft="@+id/btDeleleUser"
-        android:layout_alignStart="@+id/btDeleleUser" />
+        android:layout_alignRight="@+id/btBlockUser"
+        android:layout_alignEnd="@+id/btBlockUser"
+        android:layout_alignLeft="@+id/btBlockUser"
+        android:layout_alignStart="@+id/btBlockUser" />
 </RelativeLayout>
