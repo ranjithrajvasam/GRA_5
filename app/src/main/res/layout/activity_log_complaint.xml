@@ -11,7 +11,7 @@
     android:background="@drawable/home"
     tools:context="com.example.gra.gra.LogComplaintActivity">
 
-    <EditText
+<!--    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -20,19 +20,21 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:id="@+id/etCategory"
-        android:hint="Category" />
+        android:hint="Category" />-->
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/etCategory"
-        android:layout_alignLeft="@+id/etCategory"
-        android:layout_alignStart="@+id/etCategory"
+        android:layout_below="@+id/spinCategory"
         android:layout_marginTop="25dp"
         android:id="@+id/etLocality"
-        android:hint="Locality" />
+        android:hint="Locality"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -44,18 +46,9 @@
         android:layout_alignStart="@+id/etLocality"
         android:layout_marginTop="18dp"
         android:id="@+id/etCity"
-        android:hint="city" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/etCity"
-        android:layout_alignStart="@+id/etCity"
-        android:id="@+id/etState"
-        android:hint="State" />
+        android:hint="city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -67,7 +60,9 @@
         android:layout_alignStart="@+id/etState"
         android:layout_marginTop="17dp"
         android:id="@+id/etPincode"
-        android:hint="Pincode" />
+        android:hint="Pincode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -79,7 +74,30 @@
         android:layout_alignStart="@+id/etPincode"
         android:layout_marginTop="25dp"
         android:id="@+id/etDescription"
-        android:hint="Description" />
+        android:hint="Description"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinCategory" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etState"
+        android:hint="State"
+        android:layout_below="@+id/etCity"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Submit "
@@ -87,7 +105,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/bLogComplaint"
         android:layout_below="@+id/etDescription"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
 
 </RelativeLayout>
