@@ -42,12 +42,13 @@ public class LogComplaintActivity extends AppCompatActivity implements OnItemSel
 
         // Spinner Drop down elements
         List<String> categories = new ArrayList<String>();
-        categories.add("Automobile");
-        categories.add("Business Services");
-        categories.add("Computers");
-        categories.add("Education");
-        categories.add("Personal");
-        categories.add("Travel");
+        categories.add("Road");
+        categories.add("Garbage");
+        categories.add("Water");
+        categories.add("Electricity");
+        categories.add("Pollution");
+        categories.add("Land");
+        categories.add("Other..");
 
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);

@@ -33,6 +33,13 @@ public class MyGrievanceActivity extends ActionBarActivity {
             e.printStackTrace();
         }
 
+        TextView mTextView1 = (TextView) findViewById(R.id.col1);
+        TextView mTextView2 = (TextView) findViewById(R.id.col2);
+        TextView mTextView3 = (TextView) findViewById(R.id.col3);
+
+        mTextView1.setText("Grievance ID");
+        mTextView2.setText("Category");
+        mTextView3.setText("Status");
 
         ArrayList<JSONObject> listItems=getArrayListFromJSONArray(jsonArray);
 

@@ -39,12 +39,14 @@ public class ListAdapter extends ArrayAdapter<JSONObject>{
 
         TextView txtId=(TextView)itemView.findViewById(R.id.txtgid);
         TextView txtCategory=(TextView)itemView.findViewById(R.id.txtcategory);
+        TextView txtDescription=(TextView)itemView.findViewById(R.id.txtdescription);
         TextView txtStatus=(TextView)itemView.findViewById(R.id.txtstatus);
 
         try {
 
             txtId.setText(list.get(position).getString("g_id"));
             txtCategory.setText(list.get(position).getString("category"));
+            txtDescription.setText(list.get(position).getString("description"));
             txtStatus.setText(list.get(position).getString("status"));
 
         } catch (JSONException e) {
