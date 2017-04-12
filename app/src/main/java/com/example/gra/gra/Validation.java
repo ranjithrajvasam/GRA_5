@@ -19,6 +19,33 @@ public class Validation {
         }
     }
 
+    public static boolean isValidPhone(String number){
+        try{
+            int pin = Integer.parseInt(number);
+            return number.length() >= 10;
+        }
+        catch (Exception e){
+            return false;
+        }
+    }
+
+    public static boolean isValidAadhar(String number){
+
+        return number.length() == 12;
+    }
+
+    public static boolean isValidEmail(String email){
+
+        if(email.length() == 0){
+            return false;
+        }
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
+    public static boolean isValidPassword(String password){
+        return password.length() >= 8;
+    }
+
     public static void showAlert(AppCompatActivity className, String msg, String btnMsg) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(className);

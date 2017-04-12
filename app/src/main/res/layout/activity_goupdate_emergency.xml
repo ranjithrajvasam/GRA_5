@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
         android:textSize = "20dp"
-        android:id="@+id/tvWater"
+        android:id="@+id/tvCallWater"
         android:layout_below="@+id/etPolice"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -108,8 +108,8 @@
         android:text="103"
         android:ems="10"
         android:id="@+id/etWater"
-        android:layout_alignBaseline="@+id/tvWater"
-        android:layout_alignBottom="@+id/tvWater"
+        android:layout_alignBaseline="@+id/tvCallWater"
+        android:layout_alignBottom="@+id/tvCallWater"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
