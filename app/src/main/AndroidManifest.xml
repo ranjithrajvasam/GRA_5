@@ -27,7 +27,8 @@
         <activity android:name=".govtOffcHomeActivity" />
         <activity android:name=".GOGrievanceActivity" />
         <activity android:name=".GOBlockUserActivity" />
-        <activity android:name=".GOEmergencyActivity"></activity>
+        <activity android:name=".GOEmergencyActivity" />
+        <activity android:name=".GOUpdateEmergencyActivity"></activity>
     </application>
 
 </manifest>
