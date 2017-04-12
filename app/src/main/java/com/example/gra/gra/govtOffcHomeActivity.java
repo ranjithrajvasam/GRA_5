@@ -20,24 +20,24 @@ public class govtOffcHomeActivity extends AppCompatActivity {
         bViewGrievance.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent registerIntent = new Intent(govtOffcHomeActivity.this,GOGrievanceActivity.class);
-                govtOffcHomeActivity.this.startActivity(registerIntent);
+                Intent grievIntent = new Intent(govtOffcHomeActivity.this,GOGrievanceActivity.class);
+                govtOffcHomeActivity.this.startActivity(grievIntent);
             }
         });
 
         bBlockUser.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent registerIntent = new Intent(govtOffcHomeActivity.this,GOGrievanceActivity.class);
-                govtOffcHomeActivity.this.startActivity(registerIntent);
+                Intent blockIntent = new Intent(govtOffcHomeActivity.this,GOBlockUserActivity.class);
+                govtOffcHomeActivity.this.startActivity(blockIntent);
             }
         });
 
         bUpdateEmergency.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent registerIntent = new Intent(govtOffcHomeActivity.this,GOEmergencyActivity.class);
-                govtOffcHomeActivity.this.startActivity(registerIntent);
+                Intent emergencyIntent = new Intent(govtOffcHomeActivity.this,GOEmergencyActivity.class);
+                govtOffcHomeActivity.this.startActivity(emergencyIntent);
             }
         });
     }

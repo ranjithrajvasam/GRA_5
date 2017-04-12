@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gogrievance_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home"
+    tools:context="com.example.gra.gra.GOGrievanceIdActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tvSearchGId"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="gid"
+        android:layout_alignLeft="@+id/rbSearchPending"
+        android:layout_alignStart="@+id/rbSearchPending" />
+
+    <TextView
+        android:text="category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSearchCategory"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvSearchGId"
+        android:layout_alignRight="@+id/tvSearchPincode"
+        android:layout_alignEnd="@+id/tvSearchPincode"
+        android:layout_alignLeft="@+id/tvSearchGId"
+        android:layout_alignStart="@+id/tvSearchGId" />
+
+    <TextView
+        android:text="pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSearchPincode"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvSearchCategory"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/tvSearchGId"
+        android:layout_alignStart="@+id/tvSearchGId" />
+
+    <TextView
+        android:text="description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSearchDescrip"
+        android:textSize="20dp"
+        android:height="80dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tvSearchPincode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Download Attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDwnloadAttach"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvSearchDescrip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioButton
+        android:text="Open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDwnloadAttach"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/rbSearchOpen"
+        android:checked="false" />
+
+    <RadioButton
+        android:text="Pending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rbSearchOpen"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rbSearchPending" />
+
+    <RadioButton
+        android:text="Closed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rbSearchPending"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/rbSearchClosed" />
+
+
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSearchUpdate"
+        android:layout_below="@+id/rbSearchOpen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="GID :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSearchCategory"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/tvSearchGId"
+        android:layout_toStartOf="@+id/tvSearchGId" />
+
+    <TextView
+        android:text="Category :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSearchPincode"
+        android:layout_toLeftOf="@+id/tvSearchCategory"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Pincode :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSearchDescrip"
+        android:layout_toLeftOf="@+id/tvSearchPincode"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
