@@ -5,9 +5,12 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.content.DialogInterface;
+import android.widget.Spinner;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -16,8 +19,14 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class LogComplaintActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemSelectedListener;
 
+public class LogComplaintActivity extends AppCompatActivity implements OnItemSelectedListener {
+
+    String item;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +34,30 @@ public class LogComplaintActivity extends AppCompatActivity {
 
         final String aadhar_number = MyGlobalVariable.getMyAadharNumber();
 
-        final EditText etCategory =(EditText) findViewById(R.id.etCategory);
+        // Spinner element
+        Spinner spinner = (Spinner) findViewById(R.id.spinCategory);
+
+        // Spinner click listener
+        spinner.setOnItemSelectedListener(this);
+
+        // Spinner Drop down elements
+        List<String> categories = new ArrayList<String>();
+        categories.add("Automobile");
+        categories.add("Business Services");
+        categories.add("Computers");
+        categories.add("Education");
+        categories.add("Personal");
+        categories.add("Travel");
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        spinner.setAdapter(dataAdapter);
+
         final EditText etLocality = (EditText) findViewById(R.id.etLocality);
         final EditText etCity = (EditText) findViewById(R.id.etCity);
         final EditText etState = (EditText) findViewById(R.id.etState);
@@ -38,8 +70,7 @@ public class LogComplaintActivity extends AppCompatActivity {
         bLogComplaint.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-                final String category = etCategory.getText().toString();
+                final String category =item;
                 final String locality = etLocality.getText().toString();
                 final String city = etCity.getText().toString();
                 final String state = etState.getText().toString();
@@ -89,5 +120,16 @@ public class LogComplaintActivity extends AppCompatActivity {
             }
 
         });
+    }
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        // On selecting a spinner item
+        item = parent.getItemAtPosition(position).toString();
+
+        // Showing selected spinner item
+        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+    }
+    public void onNothingSelected(AdapterView<?> arg0) {
+        // TODO Auto-generated method stub
     }
 }
