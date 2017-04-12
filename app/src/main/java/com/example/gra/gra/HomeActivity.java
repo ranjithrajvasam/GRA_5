@@ -42,6 +42,22 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        bContactUs.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent contactIntent = new Intent(HomeActivity.this,ContactUsActivity.class);
+                HomeActivity.this.startActivity(contactIntent);
+            }
+        });
+
+        bEmergencyDials.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent emergencyIntent = new Intent(HomeActivity.this,ContactsActivity.class);
+                HomeActivity.this.startActivity(emergencyIntent);
+            }
+        });
+
         bMyComplaint.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v){
