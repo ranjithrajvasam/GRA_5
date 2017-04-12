@@ -16,7 +16,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:text="100"
         android:ems="10"
         android:layout_alignParentTop="true"
@@ -54,7 +54,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:text="101"
         android:ems="10"
         android:layout_below="@+id/etAadhar"
@@ -66,7 +66,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:text="102"
         android:ems="10"
         android:id="@+id/etPolice"
@@ -104,7 +104,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:text="103"
         android:ems="10"
         android:id="@+id/etWater"
@@ -139,7 +139,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:text="104"
         android:ems="10"
         android:id="@+id/etElectricity"

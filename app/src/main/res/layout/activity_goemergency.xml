@@ -13,7 +13,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:hint="Enter Pincode"
         android:ems="10"
         android:layout_marginTop="46dp"
