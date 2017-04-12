@@ -19,21 +19,21 @@
         app:srcCompat="@drawable/gra_logo_white"
         android:id="@+id/imageView3"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"/>
+        android:layout_centerHorizontal="true" />
 
 
     <TextView
         android:text="Welcome Ravi!"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="26dp"
         android:id="@+id/textView5"
         android:textSize="20dp"
+        android:hint="Aadhar Number"
         android:layout_below="@+id/imageView3"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Aadhar Number"/>
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:text="Aadhar No.:"
@@ -114,28 +114,25 @@
         android:layout_toEndOf="@+id/tvEmail" />
 
     <Button
-        android:text="Change Password"
+        android:id="@+id/bChangePswd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/bChangePswd"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/tvEmail"
-        android:layout_alignStart="@+id/tvEmail"
-        android:elevation="7dp" />
+        android:elevation="7dp"
+        android:text="Change Password"
+        android:layout_below="@+id/bUpdateProfile"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Update Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bUpdateProfile"
-        android:layout_above="@+id/bChangePswd"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="20dp"
+        android:elevation="7dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/etEmail"
         android:layout_alignLeft="@+id/bChangePswd"
         android:layout_alignStart="@+id/bChangePswd"
-        android:elevation="7dp" />
+        android:layout_alignRight="@+id/bChangePswd"
+        android:layout_alignEnd="@+id/bChangePswd" />
 
 </RelativeLayout>

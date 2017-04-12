@@ -22,43 +22,44 @@
         android:layout_marginEnd="176dp">
 
         <TextView
-            android:text="Fire :"
+            android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:id="@+id/textView14" />
+            android:text="Fire"
+            android:textSize="20dp" />
 
         <TextView
-            android:text="Ambulance :"
+            android:id="@+id/textView16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:id="@+id/textView16" />
+            android:text="Ambulance"
+            android:textSize="20dp" />
 
         <TextView
-            android:text="Police :"
+            android:id="@+id/textView18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:id="@+id/textView18" />
+            android:text="Police"
+            android:textSize="20dp" />
 
         <TextView
-            android:text="Water :"
+            android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:id="@+id/textView20" />
+            android:text="Water"
+            android:textSize="20dp" />
 
         <TextView
-            android:text="Electricity :"
+            android:id="@+id/textView22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:id="@+id/textView22" />
+            android:text="Electricity"
+            android:textSize="20dp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -69,7 +70,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="173dp"
-        android:layout_marginStart="173dp">
+        android:layout_marginStart="173dp"
+        android:id="@+id/linearLayout">
 
         <TextView
             android:layout_width="match_parent"
@@ -115,4 +117,5 @@
             android:inputType="number"
             android:id="@+id/tvCallElectricty" />
     </LinearLayout>
+
 </RelativeLayout>
