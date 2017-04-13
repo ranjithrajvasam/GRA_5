@@ -13,64 +13,65 @@
     tools:context="com.example.gra.gra.HomeActivity">
 
     <Button
-        android:text="Log Complaint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="105dp"
         android:id="@+id/bLogComplaint"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/imageView"
         android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
+        android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="105dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="FILE A COMPLAINT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <Button
-        android:text="My Complaint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/bLogComplaint"
-        android:layout_alignLeft="@+id/bLogComplaint"
-        android:layout_alignStart="@+id/bLogComplaint"
-        android:layout_marginTop="22dp"
         android:id="@+id/bMyComplaint"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/bLogComplaint"
+        android:layout_alignLeft="@+id/bLogComplaint"
         android:layout_alignRight="@+id/bLogComplaint"
-        android:layout_alignEnd="@+id/bLogComplaint" />
+        android:layout_alignStart="@+id/bLogComplaint"
+        android:layout_below="@+id/bLogComplaint"
+        android:layout_marginTop="22dp"
+        android:text="Status of my complaints" />
 
     <Button
         android:text="My Profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/bMyComplaint"
-        android:layout_alignLeft="@+id/bMyComplaint"
-        android:layout_alignStart="@+id/bMyComplaint"
-        android:layout_marginTop="21dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:id="@+id/bMyProfile"
-        android:layout_alignRight="@+id/bMyComplaint"
-        android:layout_alignEnd="@+id/bMyComplaint" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Emergency Dials"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/bMyProfile"
-        android:layout_alignLeft="@+id/bMyProfile"
-        android:layout_alignStart="@+id/bMyProfile"
-        android:layout_marginTop="20dp"
+        android:layout_height="80dp"
+
+
         android:id="@+id/bEmergencyDials"
-        android:layout_alignRight="@+id/bMyProfile"
-        android:layout_alignEnd="@+id/bMyProfile" />
+
+        android:layout_alignTop="@+id/bMyProfile"
+        android:layout_toRightOf="@+id/bMyProfile"
+        android:layout_toLeftOf="@+id/bContactUs"
+        android:layout_toStartOf="@+id/bContactUs" />
 
     <Button
-        android:text="Contact Us"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/bEmergencyDials"
-        android:layout_alignRight="@+id/bEmergencyDials"
-        android:layout_alignEnd="@+id/bEmergencyDials"
-        android:layout_marginTop="22dp"
         android:id="@+id/bContactUs"
-        android:layout_alignLeft="@+id/bEmergencyDials"
-        android:layout_alignStart="@+id/bEmergencyDials" />
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+
+        android:text="Contact Us"
+
+        android:layout_alignBottom="@+id/bEmergencyDials"
+        android:layout_alignTop="@+id/bEmergencyDials"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="wrap_content"

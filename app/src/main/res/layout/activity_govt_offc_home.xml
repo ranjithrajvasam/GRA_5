@@ -17,6 +17,7 @@
         android:layout_height="75dp"
         app:srcCompat="@drawable/gra_logo_white"
         android:id="@+id/imageView5"
+        android:layout_marginTop="52dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -38,9 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btBlockUser"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/btViewGrievances"
         android:layout_alignLeft="@+id/btViewGrievances"
         android:layout_alignStart="@+id/btViewGrievances"
+        android:layout_marginTop="43dp"
         android:layout_alignRight="@+id/btViewGrievances"
         android:layout_alignEnd="@+id/btViewGrievances" />
 
@@ -48,11 +50,11 @@
         android:text="Update Emergency Contacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btBlockUser"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="38dp"
         android:id="@+id/btUpdateEmergency"
-        android:layout_alignRight="@+id/btBlockUser"
-        android:layout_alignEnd="@+id/btBlockUser"
+        android:layout_below="@+id/btBlockUser"
         android:layout_alignLeft="@+id/btBlockUser"
-        android:layout_alignStart="@+id/btBlockUser" />
+        android:layout_alignStart="@+id/btBlockUser"
+        android:layout_alignRight="@+id/btBlockUser"
+        android:layout_alignEnd="@+id/btBlockUser" />
 </RelativeLayout>
